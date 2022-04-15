@@ -5,7 +5,10 @@ body{
 .logo__container{
     margin-left: 3%;
 }
+
+
 .navlinks__container{
+    display: flex;
     width: 393px;
     height: 57px;    
     margin-top: -5.5%;
@@ -167,8 +170,14 @@ p{
     top: 600px;
 }
 
+.form__heading{
+    color:#0d1321;
+    text-align: center;
+}
 .connect__Form{
-    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     left: 700px;
 }
 
@@ -204,3 +213,51 @@ footer{
     font-size: 14px;
 }
 
+.mySkills{
+    background-color: #FFEDDF;
+    text-align: center;
+}
+
+.flexContainer{
+   display: flex;
+   flex-direction: row;
+}
+
+h3{
+    font-family: "Fjalla One";
+}
+
+.UX__research, .user__Empathy, 
+.data__Analysis{
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.myWork{
+    text-align: center;
+}
+
+.myWork, h1{
+    color:#FFEDDF;
+}
+
+h4{
+    font-family: "Fjalla One";
+    font-size: 30px;
+}
+.workGrid{
+    display: grid;
+    grid-template-rows: 35% 35% 35%;
+    justify-content: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer{flex-direction: column;}
+    .UX__research, .user__Empathy, .data__Analysis{width: fit-content;}
+
+}
+
+
+    
